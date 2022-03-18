@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./fonts/Vazir.eot");
+  src: url("./fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Vazir.woff2") format("woff2"),
+    url("./fonts/Vazir.woff") format("woff"),
+    url("./fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Vazir" !important;
+}
+body {
+  direction: rtl;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  background-color:rgb(197, 216, 235) !important;
+}
+.App {
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.forms {
+  background-color: #282c34 !important;
+  color: white;
+  padding: 30px 20px;
+  box-shadow: rgb(0 0 0 / 80%) 0px 5px 25px;
+}
+.formInputs {
+  width: 100%;
+}
+.formstatus {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #435257;
+}
+
+.formstatus.selected {
+  background-color: rgb(121, 177, 125);
+}
+
+.formHeader {
+  text-align: center;
+  color: #fac85b;
+  font-size: 1.1em;
+}
+.formItems {
+  margin-bottom:20px;
+}
+
+input {
+  appearance: none;
+  color: white;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid rgb(201, 201, 201);
+  padding: 8px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-moz-autofill:active {
+  -webkit-text-fill-color: white;
+}
+
+input::placeholder {
+  color: rgb(202, 200, 200);
+}
+
+.selectState {
+  color: white;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgb(201, 201, 201);
+  padding: 7px;
+  border-radius: 2px;
+}
+
+select.non-selected {
+  color: rgb(202, 200, 200);
+}
+option {
+  background-color: rgb(216, 216, 216);
+  color: black;
+}
+
+.error {
+  font-size: 13px;
+  margin-top: 10px;
+  color: rgb(219, 67, 67);
+}
+
+.errorText {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.formSubmitBtn {
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-top : 20px;
+  border-radius: 5px;
+  background-color: rgb(121, 177, 125);  
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    width: 90vw;
+    margin: 40px auto;
+  }
+}
